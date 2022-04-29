@@ -1,0 +1,265 @@
+
+/* ----- paramètres généraux ----- */
+body
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	line-height: 150%;
+	margin: 0;
+	background-color: #FFF5E2;
+}
+
+h1
+{
+	color: #c29742;
+	font-size: 200%;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+h2
+{
+	color: #c29742;
+	font-size: 150%;
+	font-weight: normal;
+	text-transform: uppercase;
+	clear: both;
+}
+h3
+{
+	color: #c29742;
+	font-size: 115%;
+	font-weight: bold;
+	clear: both;
+}
+
+/* ----- paramètres généraux de l'entête ----- */
+header
+{
+	position: relative;
+	background-color: #FFCE6E;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	font-size: 150%;
+	padding: 10px 0px 10px 0px;
+}
+
+/* ----- paramètres du bandeau d'entête ----- */
+header .entete
+{
+	height: 60px;
+	background-color: #FFCE6E;
+	text-align: center;
+}
+
+/* ----- paramètres contact header ----- */
+header .contact_header
+{
+	float: right;
+	box-sizing:border-box;
+	background-color: #FFE0A5;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 0;
+	width: 200px;
+	font-size: 66%;
+	line-height: 125%;
+	margin-top: -20px;
+	height: auto;
+	right: 0;
+}
+
+/* ----- paramètres generaux bas de page ----- */
+footer
+{
+	background-color: #FFD481;
+	padding: 10px 0px 10px 0px;
+	text-align: right;
+}
+
+/* ----- cliquable footer ----- */
+footer a
+{
+	color: black;
+}
+
+/* ----- taille de la plage (largeur) ----- */
+header .entete, article, footer div
+{
+	position: relative;
+	width: 900px;
+	margin: auto;
+}
+
+/* ----- paragraphe article ----- */
+article p
+{
+	text-align: justify;
+}
+
+article p::first-letter
+{
+	font-size: 200%;
+	color: #c29742;
+}
+
+/* ----- cliquables ----- */
+a
+{
+	color: black;
+	text-decoration: underline;
+}
+a:hover
+{
+	text-decoration: none;
+}
+
+/* ----- img ----- */
+img
+{
+	margin: 10px;
+	float: left;
+}
+img:hover{
+	width: 40%;
+	filter: sepia(50%);
+}
+
+/* ----- barre de navigation ----- */
+nav
+{
+	background-color: #FFE0A5;
+	line-height: 300%;
+	text-align: center;
+	height: auto;
+}
+
+nav ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* ----- liste nav ----- */
+nav ul li
+{
+	display: inline-block;
+	margin: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+/* ----- cliquables liste nav ----- */
+nav ul li a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0;
+	border-radius: 0px;
+	margin: 0;
+}
+nav ul li:hover a
+{
+	filter: brightness(70%);
+	color: white;
+}
+
+/* ----- responsive 1024px-767px ----- */
+@media only screen
+and (max-device-width: 1024px)
+{
+	header .entete, article, footer div
+	{
+		width: 80%;
+	}
+}
+
+
+/* ----- tesponsive <767px ----- */
+@media only screen
+and (max-device-width: 767px)
+{
+
+	/* ----- header ----- */
+	header .contact_header
+	{
+		display: none;
+	}
+
+	h1
+	{
+		text-align: left;
+		line-height: 120%;
+	}
+
+
+	/* ----- barre de navigation ----- */
+	nav
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+		letter-spacing: 10px;
+	}
+	nav:hover
+	{
+		background-color: #FFE0A5;
+	}
+
+	/* ----- avant barre déroulante navigation ----- */
+	nav ul::before
+	{
+		content: "MENU";
+	}
+	nav ul
+	{
+		font-size: 100%;
+	}
+
+	/* ----- forme liste ----- */
+	nav ul li
+	{
+		border-bottom: thick double black;
+		position: relative;
+		left: 0px;
+		margin-left: 0;
+		width: 100%;
+		display: none;
+	}
+	nav ul:hover li
+	{
+		display: block;
+	}
+
+	nav ul li:hover a
+	{
+		color: black;
+	}
+
+	/* ----- img ----- */
+	img
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	img:hover{
+		filter: none;
+		width: 100%;
+	}
+}
+
+/* ----- responsive <767px portrait uniquement ----- */
+@media only screen
+and (max-device-width: 767px)
+and (orientation: portrait)
+{
+	img
+	{
+		float: none;
+		width: 100%;
+	}
+}

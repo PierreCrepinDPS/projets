@@ -1,0 +1,342 @@
+body{
+    background-color: #15110C;
+}
+
+*{
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+a{
+    color: #ff9900;
+}
+
+div{
+    position: relative;
+}
+
+.in{
+    width: 900px;
+    margin: auto;
+}
+
+li{
+    list-style-position: inside;
+}
+
+#header{
+    background-color: #1E1912;
+}
+
+#header .in{
+    background-image: url("../img/www-d.jpg");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#header .in a{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+}
+
+#header .in span{
+    display: block;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 20px;
+    color: #ff9900;
+}
+
+#menu{
+    height: 50px;
+}
+
+#menu nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu a{
+    width: 150px;
+    height: 50px;
+    border-top: solid;
+    background-color: #ff9900;
+    border-top-width: 1px;
+    border-top-color: #ffbb44;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #dd8800;
+    color: #222211;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+#headline{
+    background-image: url("../img/tiger-d.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 340px;
+    padding-bottom: 100px;
+}
+
+#headline h1{
+    color: #ff9900;
+    padding-right: 340px;
+}
+
+#headline p{
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 340px;
+}
+
+#headline ol {
+	position:absolute;
+	list-style-type: none ;
+	right: 0px ;
+	width: 270px; 
+	top: -270px; 	
+}
+#headline li {
+	background-color: #d9d4be ;
+	padding: 10px ;	
+}
+#headline #petition {
+	background-color: #e6e4d8;
+}
+
+#headline #share {
+	margin-top: 10px;
+}
+#headline #petition  p {
+	color: #222211 ;
+	padding : 0px ;
+	font-size: 14px;
+	line-height: 20px;
+}
+#headline #donation p {
+	color : #222211 ;
+	padding : 0px ;
+	font-size: 14px;
+	line-height: 20px;	
+}
+#headline  h2 {
+	color:#222211;
+	padding: 5px 5px 5px 35px;
+}
+#headline .in a {
+	display:block;
+	height: 20px;
+	width: auto;
+	padding: 5px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-color :#ff9900 ;
+	color: white ;
+	text-align:center ;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:18px;
+	line-height:20px; 
+	box-shadow: -3px 3px 0px #bbb ;
+	font-weight: normal ;
+}
+#headline #donation a {
+	background-color:#ff5400
+	}
+#headline #share .facebook a {
+	background-color:#3b5998 ;
+}
+#headline #share .twitter a{
+	background-color: #1783ff ;
+}
+
+#headline #petition a:hover {                         
+	background-color:  #ffbb44 ;
+}
+
+#headline #donation a:hover {
+	background-color: #ffbb44;
+}
+#headline #share a:hover {
+	background-color:#ffbb44;
+}
+#headline li#petition::before{
+content:"1";
+display:block;
+height:20px;
+width:20px;
+padding:5px;
+margin:0px;
+background-color:#ff9900;
+color:white;
+text-align:center;
+text-decoration:none;
+text-transform:uppercase;
+font-size:18px;
+line-height:20px;
+box-shadow: -3px 3px 0px #bbbbbb;
+position:absolute;
+}
+#headline li#donation::before{
+content:"2";
+display:block;
+height:20px;
+width:20px;
+padding:5px;
+margin:0px;
+background-color:#ff9900;
+color:white;
+text-align:center;
+text-decoration:none;
+text-transform:uppercase;
+font-size:18px;
+line-height:20px;
+box-shadow: -3px 3px 0px #bbbbbb;
+position:absolute;
+}
+#headline li#share::before{
+content:"3";
+display:block;
+height:20px;
+width:20px;
+padding:5px;
+margin:0px;
+background-color:#ff9900;
+color:white;
+text-align:center;
+text-decoration:none;
+text-transform:uppercase;
+font-size:18px;
+line-height:20px;
+box-shadow: -3px 3px 0px #bbbbbb;
+position:absolute;
+}
+
+
+#headline li#donation a::after{
+content:" →";
+}
+
+
+
+#feature li a::after{
+content:" >";
+}
+
+#feature {
+	height: 220px; 
+	padding-top: 20px;
+	padding-bottom:20px;
+	display:block ;	
+
+}
+#feature .in ul li {
+	height: 160px;
+	width: 280px ;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-right:10px;
+	margin-left:10px;
+	float:left;
+	background: url("../img/tiger-pencil.jpg") center repeat ;
+	background-size: cover ;
+	list-style: none;
+}
+
+
+#feature .in ul li a {
+	color:white ;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none ;
+	text-transform: uppercase;
+	position: absolute;
+	padding: 10px;
+	background-color: #ff9900 ;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:10px;
+	margin-left:-10px;
+	height: 20px;
+	width: auto;
+	display:block;
+	line-height:20px;
+}
+
+
+#news {
+	background-color:#1e1912 ;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display:block ;
+}
+
+#news .in ul li {
+	border-bottom: 1px #2f271c solid;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	list-style: none;
+}
+
+#news .in ul li h3 a span{
+	color: #ff9900;
+}
+
+#news .in strong {
+	text-transform: uppercase ;
+}
+
+#footer {
+	margin-top: 20px;
+	padding-bottom: 40px ;
+	font-size: 32px;
+	
+}
+#footer .in ul li {
+	display: inline ;
+}
+
+#footer .in ul li a {
+	font-size:12px ;
+	position: relative ;
+}

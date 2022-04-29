@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'FuturaBook';
+    src: url("font/FuturaPTLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'FuturaHO';
+    font-weight: bold;
+    src: url("font/FuturaPTHeavyOblique.otf") format("opentype");
+}
+
+h1{
+    color: #FFFFFF;
+    font-family: 'FuturaHO', sans-serif;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #FFFFFF;
+    font-family: 'FuturaBook', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+p{
+    font-family: 'FuturaBook', sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 150px;
+    background-color: #212121;
+    display: flex;
+    margin-bottom: 200px;
+}
+
+header img{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 150px;
+}
+
+header ul{
+    display: block;
+    width: 100%;
+    list-style-type: none;
+}
+
+header ul li{
+    float: right;
+    width: 20%;
+    text-align: center;
+    line-height: 150px;
+}
+
+header ul li a{
+    color: #FFFFFF;
+    font-family: 'FuturaHO', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header ul li a:hover{
+    filter: brightness(80%);
+}
+
+
+
+.profil{
+    display: block;
+    height: 700px;
+    background-color: #212121;
+    margin-bottom: 550px;
+}
+
+.profil img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.profil .titre{
+    padding-top: 150px;
+    margin: auto;
+    width: 500px;
+    height: 64px;
+}
+
+.profil .titre .bg_titre{
+    position: absolute;
+    background-color: #FEA30C;
+    margin-top: 20px;
+    height: 24px;
+    width: 500px;
+}
+
+.profil .titre h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 64px;
+    position: absolute;
+}
+
+.profil h2{
+    line-height: 200px;
+    text-align: center;
+}
+
+
+
+.profil #showreel{
+    padding-top: 50px;
+    margin-left: 10%;
+    width: 380px;
+    height: 64px;
+    margin-bottom: 50px;
+}
+
+.profil #showreel .bg_showreel{
+    position: absolute;
+    background-color: #FEA30C;
+    margin-top: 20px;
+    height: 24px;
+    width: 380px;
+}
+
+.profil #showreel h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 64px;
+    position: absolute;
+}
+
+.profil iframe{
+    display: block;
+    margin: auto;
+}
+
+
+.bandeau{
+    margin-top: 100px;
+    background-color: #212121;
+    width: 100%;
+    height: 200px;
+}
+
+#formation .bandeau .bg_bandeau_f{
+    position: absolute;
+    background-color: #FEA30C;
+    margin-top: 90px;
+    height: 24px;
+    width: 420px;
+    margin-left: 10%;
+}
+
+#formation .bandeau h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 200px;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#formation h3{
+    font-family: 'FuturaHO';
+    margin-left: 10%;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+#formation p{
+    font-family: 'FuturaBook';
+    margin-left: 10%;
+    font-size: 22px;
+}
+
+
+
+#exp_pro .bandeau .bg_bandeau_exp{
+    position: absolute;
+    background-color: #FEA30C;
+    margin-top: 90px;
+    height: 24px;
+    width: 990px;
+    margin-left: 10%;
+}
+
+#exp_pro .bandeau h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 200px;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#exp_pro h3{
+    font-family: 'FuturaHO';
+    margin-left: 10%;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+#exp_pro p{
+    font-family: 'FuturaBook';
+    margin-left: 10%;
+    font-size: 22px;
+}
+
+
+
+#competences{
+    margin-bottom: 100px;
+}
+
+#competences .bandeau .bg_bandeau_c{
+    position: absolute;
+    background-color: #FEA30C;
+    margin-top: 90px;
+    height: 24px;
+    width: 500px;
+    margin-left: 10%;
+}
+
+#competences .bandeau h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 200px;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#competences .corps_c{
+    margin-top: 100px;
+}
+
+#competences .corps_c h3{
+    font-family: 'FuturaHO', sans-serif;
+    font-size: 24px;
+}
+
+#competences .corps_c .ligne{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#competences .corps_c .bg_skill{
+    background-color: #212121;
+    height: 25px;
+    width: 300px;
+}
+
+#competences .corps_c .ligne .coll .skill_c1{
+    background-color: #FEA30C;
+    height: 25px;
+    width: 260px;
+}
+
+#competences .corps_c .ligne .coll .skill_c2{
+    background-color: #FEA30C;
+    height: 25px;
+    width: 80px;
+}
+
+#competences .corps_c .ligne .coll .skill_c3{
+    background-color: #FEA30C;
+    height: 25px;
+    width: 180px;
+}
+
+#competences .corps_c .ligne .coll .skill_c4{
+    background-color: #FEA30C;
+    height: 25px;
+    width: 130px;
+}
+
+#competences .corps_c .ligne .coll .skill_c5{
+    background-color: #FEA30C;
+    height: 25px;
+    width: 80px;
+}
+
+#competences .corps_c .ligne .coll .skill_c6{
+    background-color: #FEA30C;
+    height: 25px;
+    width: 235px;
+}
+
+
+#propos{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#propos .bandeau .bg_bandeau_p{
+    position: absolute;
+    background-color: #FEA30C;
+    margin-top: 90px;
+    height: 24px;
+    width: 360px;
+    margin-left: 10%;
+}
+
+#propos .bandeau h1{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 200px;
+    margin-left: 10%;
+    position: absolute;
+}
+
+#propos article{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'FuturaBook', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 150px;
+}
+
+#propos .contact{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+#propos .contact a{
+    color: #000000;
+    font-family: 'FuturaBook', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#propos .contact a:hover{
+    color: #727272;
+}
+
+#propos .contact .tel, .mail, .adresse{
+    display: flex;
+    line-height: 50px;
+}
+
+#propos .contact .adresse{
+    line-height: 25px;
+}
+
+#propos .reseaux{
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#propos .site{
+    font-family: 'FuturaHO', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+}

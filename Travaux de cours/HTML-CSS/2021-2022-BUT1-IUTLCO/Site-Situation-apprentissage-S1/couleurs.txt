@@ -1,0 +1,9 @@
+Palleton
+
+*** Primary color:
+
+   très sombre #4D8BB4 = rgb( 77,139,180) = rgba( 77,139,180,1) = rgb0(0.302,0.545,0.706)
+   sombre #82AECA = rgb(130,174,202) = rgba(130,174,202,1) = rgb0(0.51,0.682,0.792)
+   normal #BBD5E6 = rgb(187,213,230) = rgba(187,213,230,1) = rgb0(0.733,0.835,0.902)
+   clair #EEF6FA = rgb(238,246,250) = rgba(238,246,250,1) = rgb0(0.933,0.965,0.98)
+   très clair #FAFCFD = rgb(255,255,255) = rgba(255,255,255,1) = rgb0(1,1,1)

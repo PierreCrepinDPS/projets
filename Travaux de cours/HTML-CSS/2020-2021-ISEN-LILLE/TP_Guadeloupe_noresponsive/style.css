@@ -1,0 +1,169 @@
+head {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.4em;
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #0DA8DE;
+    
+    justify-content: space-around;
+    line-height: 1.4rem;
+}
+
+h2, h3{
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+hr {
+    color: #DDD;
+    border: solid;
+}
+
+nav {
+    display: flex;
+    color: #0DA8DE;
+    background-color: white;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    position: sticky;
+    top: 0px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 100px;
+
+}
+a {
+    text-decoration: none;
+    color: #0DA8DE;
+}
+a:hover {
+    text-decoration: underline;
+    color: #1057A1;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li h3{
+    font-weight: bolder;
+}
+
+.corps_de_page h1 {
+    color: #0DA8DE;
+}
+
+.corps_de_page {
+    width: 90%;
+    padding-left: 5%;
+}
+
+.contenant{
+    background-image: url("img/plage.jpg");
+    height: 600px;
+    width: 100%;
+    
+    background-position: center;
+}
+
+
+
+.contenant2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenant_image1, .contenant_image2, .contenant_image3 {
+    height: 250px;
+    width: 400px;
+}
+
+.contenant_image1{
+    background-image: url("img/vacances-en-famille.jpg");
+    background-repeat: no-repeat;
+    
+}
+
+.contenant_image2{
+    background-image: url("img/vacances-en-couple.jpg");
+    
+}
+
+.contenant_image3{
+    background-image: url("img/sejour-a-theme.jpg");
+    
+}
+
+.texte_centre {
+    text-align: center;
+    color: white;
+    padding-top: 25%;
+    font-weight: bold;
+}
+
+.phrase_de_fin {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.liens {
+    justify-content: space-between;
+}
+
+.footer_informations, .coordonnees, .connectes, .liens {
+    display: flex;
+}
+
+.pied_de_page {
+    background-color: #1057A1;
+    color: white;
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+}
+
+.body_contact {
+    width: 90%;
+    padding-left: 5%;
+}
+
+.body_contact h1 , .body_contact h2{
+    color: #0DA8DE;
+}
+
+.connectes {
+    margin-right: 300px;
+}
+
+.coordonnees {
+    margin-left: 200px;
+}
+
+.contenant_image1:hover , .contenant_image2:hover , .contenant_image3:hover{
+    filter: sepia(50%)
+}
+
