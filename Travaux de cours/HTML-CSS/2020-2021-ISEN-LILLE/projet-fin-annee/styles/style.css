@@ -1,0 +1,1266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #dfd3c4;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+main{
+    background-image: url("../img/fond4.png");
+    padding-top: 50px;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.pageprincipale h5{
+    padding-top: 100px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    filter: brightness(90%);
+}
+
+ul{
+    list-style: none;
+}
+
+nav a:hover{
+    color: #707070;
+}
+
+nav a:hover{
+    color: #707070;
+}
+
+nav{
+    padding-right: 7%;
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-image: url(../img/fond.png);
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px -1px 17px black;
+    z-index: 1000;
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav .sous{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav .logonav img{
+    box-shadow: 0 1px 20px rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+
+nav .logonav img:hover{
+    transform: scale(1.1);
+    transition-duration: 3s;
+}
+
+nav .logonav:hover{
+    filter: brightness(100%);
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    border-bottom: 2px solid transparent;
+    padding: 10px 0;
+}
+nav a:hover{
+    color: darkgray;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding-right: 2%;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 1px -1px 17px black;
+    border-radius: 30px;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    font-size: 1.4rem;
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.sous img{
+    margin-left: 20%;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+    color: black;
+
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+    color: rgb(53, 53, 53);
+}
+.deroulant > a::after{
+    font-size: 12px;
+}
+
+.clickable > a::after{
+    font-size: 12px;
+}
+
+.clickable ul {
+    margin-right: 10px;
+}
+
+.clickable p{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    margin: 10px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+.custom_boards{
+    text-align:center;
+    font-weight: bold;
+    font-size:3.5rem;
+    margin-left: 30px;
+    width: 250px;
+    background-color: rgb(213, 213, 213);
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    height: 50px;
+}
+
+.custom_boards h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.plateau{
+    width: 675px;
+    height: 675px;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 50px;
+}
+
+.customplateau{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 180px;
+    height: 180px;
+}
+
+
+.bille{
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.bille img{
+    width: 75px;
+}
+
+.trou{
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    box-shadow: 13px 13px 15px 0px black;
+}
+
+.custombille{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 8px 10px 9px -1px black;
+}
+
+.custombille img, .customtrou img, .customvide img{
+    width: 20px;
+}
+
+.customtrou{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 8px 10px 9px -1px black;
+}
+
+.customvide{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.trou .spinner-grow{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 47px;
+    height: 47px;
+}
+
+.totop {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/fond.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: fixed;
+    left: 3%;
+    z-index: 100;
+    top: 20px;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 1px -1px 10px black;
+}
+
+.totop:hover{
+    filter: brightness(90%);
+    color: black;
+}
+
+div.plateau [posx="0"]{
+    left: 0px;
+}
+
+div.plateau [posx="1"]{
+    left: 75px;
+}
+
+div.plateau [posx="2"]{
+    left: 150px;
+}
+
+div.plateau [posx="3"]{
+    left: 225px;
+}
+
+div.plateau [posx="4"]{
+    left: 300px;
+}
+
+div.plateau [posx="5"]{
+    left: 375px;
+}
+
+div.plateau [posx="6"]{
+    left: 450px;
+}
+
+div.plateau [posx="7"]{
+    left: 525px;
+}
+
+div.plateau [posx="8"]{
+    left: 600px;
+}
+
+div.plateau [posy="1"]{
+    top: 75px;
+}
+
+div.plateau [posy="2"]{
+    top: 150px;
+}
+
+div.plateau [posy="3"]{
+    top: 225px;
+}
+
+div.plateau [posy="4"]{
+    top: 300px;
+}
+
+div.plateau [posy="5"]{
+    top: 375px;
+}
+
+div.plateau [posy="6"]{
+    top: 450px;
+}
+
+div.plateau [posy="7"]{
+    top: 525px;
+}
+
+div.plateau [posy="8"]{
+    top: 600px;
+}
+
+.basic_plateau {
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+.basic_plateau_top {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius:50px;
+}
+
+.basic_plateau_bottom {
+    display: flex;
+}
+
+.basic_plateau_bottom_big {
+    padding-left: 14%;
+    padding-right: 13%;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+.basic_plateau_bottom1 {
+    padding-right:4%;
+    display: flex;
+    margin-right:3%;
+    padding-bottom: 30px;
+    justify-content: space-around;
+}
+
+
+.custom_plateau {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    border-radius:50px;
+    margin-left: 10%;
+    margin-right:10%;
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+
+.basic_plateau table{
+    height: 300px;
+    margin: 0;
+}
+
+.basic_plateau tr{
+    height: 150px;
+}
+
+.basic_plateau h1 {
+    text-align:center;
+    font-weight: bold;
+    font-size:3rem;
+    margin-right: 10%;
+    margin-left:10%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom:10px;
+    background-color: rgb(213, 213, 213);
+    border-radius: 50px;
+}
+
+.alignement_button{
+    padding-top: 40px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.alignement_button a:hover{
+    color: black;
+}
+
+.boutton_random button{
+    justify-content: space-around;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+.boutton_random a:hover, .btn-jeu a:hover, .btn-info a:hover, .buttonspace a:hover, .buttonspace2 a:hover {
+     filter: none;
+}
+
+.bloc_plateau{
+    margin: 10px;
+    border:none;
+    border-radius: 10%;
+}
+
+.custom:nth-child(even){
+    margin-left: auto;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    background-image: url(../img/fond3.jpg);
+}
+
+.custom table:nth-child(even){
+    padding-bottom: 50px;
+}
+
+.custom {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top:40px;
+    margin-bottom:40px;
+    width: 65%;
+    height: 220px;
+    background-image: url(../img/fond3mirror.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom h3 {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.custom table {
+    border-collapse: collapse;
+    margin: 5% auto 0 5%;
+    width: 85%;
+
+}
+
+.petit_plateau {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12%;
+
+}
+
+.petit_plateau_1 {
+    justify-content: space-around;
+}
+.plateau button.bille{
+    background-color:transparent;
+    color:transparent;
+    border:none;
+}
+
+.plateau-conception{
+    width: 675px;
+    height: 675px;
+    margin: 20px auto 0;
+}
+
+.plateau-conception>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plateau-conception>div>div {
+    width: 73px;
+    height: 73px;
+    margin: 1px 0;
+    padding-left: 17px;
+    box-shadow: inset 0px 0px 15px -10px black;
+    border-radius: 5px;
+}
+
+.formulaire-enregistrement
+{
+   margin-top:10px;
+   width: 450px;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+.curseur-concepteur{
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+legend{
+    float: none;
+    width: auto;
+    padding: unset;
+    margin: 0;
+}
+
+.curseur-concepteur legend button{
+    padding: 0 10px 5px;
+}
+
+.group-range{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-range span{
+    margin: 0 15px;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    width: 37px;
+    text-align: center;
+}
+
+.group-range input[type="range"]{
+    width: 370px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    border: 1px solid black;
+}
+
+span#AfficheValuehole
+{
+    margin-bottom: 15px;
+}
+
+.exemple-checkbox
+{
+    width: 150px;
+    margin: 20px auto;
+}
+
+.plateau-conception .bg-trou
+{
+    background-image:url(../img/trou.png);
+    opacity: 0.99;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+
+}
+
+.plateau-conception .bg-bille
+{
+    background-image:url(../img/billetrou.png);
+    opacity: 0.99;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+
+}
+
+
+.custom .btn-jeu button {
+    float: right;
+    display: block; 
+    width: 100px; 
+    text-align: center; 
+    padding: 10px; 
+    border-radius: 10px;  
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+/*bouton + pop fenetre pop up*/
+.custom .btn-info button { 
+    float: right;
+    display: block; 
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+/* Décrire l'animation */
+@keyframes slideDownFadeIN {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+
+/* Foncer l'arrière-plan de la fenêtre modale */
+.custom .modal {
+  display: none; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Afficher la fenêtre modale lorsqu'elle est ciblée par un lien supprimer */
+.custom .modal:target {
+  display: table;
+}
+
+/* la fenêtre modale  */
+.custom .modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Le contenu de la modale */
+.custom .modal-dialog .modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: slideDownFadeIN;
+  animation-duration: 0.5s;
+  border-radius: 20px;
+}
+
+li.info-record-custom {
+    box-shadow: 0px 0px 20px -5px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+li.info-record-custom ul {
+    padding: 0;
+}
+
+li.info-record-custom li {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 5px;
+}
+
+/* Bouton servant à fermer la fenêtre modale */
+.custom .closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+.custom .closebtn:hover,
+.custom .closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom .container {
+  padding: 2px 16px;
+}
+
+.custom .container ul{
+    padding-top: 10%;
+    padding-right: 10%;
+}
+
+.wingame .modal-content{
+    border-radius: 20px;
+}
+
+.wingame .modal-header{
+    margin: 0;
+    display: block;
+}
+
+.wingame h4{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.wingame h4 i{
+    animation: rebond 1.5s infinite;
+}
+
+.wingame h5{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.wingame .modal-footer a, .wingame .modal-footer button{
+    margin-right: 30px;
+    float: right;
+}
+
+.wingame .modal-footer {
+    display: block;
+    width: 100%;
+}
+
+.wingame .modal-body{
+    margin-top: 20px;
+}
+
+.wingame .modal-body li{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+.endgame .modal-content{
+    border-radius: 20px;
+}
+
+.endgame .modal-header{
+    margin: 0;
+    display: block;
+}
+
+.endgame h4{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.endgame h5{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.endgame .modal-footer {
+    margin-left: auto;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.endgame .modal-body{
+    margin-top: 20px;
+}
+
+.endgame .modal-body li{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+.pagejeu {
+    display:flex;
+    padding-bottom: 50px;
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 30%);
+}
+
+.buttonspace button{
+    display: block; 
+    width: 300px;
+    height: 60px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+    font-size: 2rem;
+}
+
+.buttonspace { /* button refresh place*/
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttonspace2{
+    margin: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.buttonspace2 .input-group{
+    width: 300px;
+}
+
+.buttonspace2 input#number-randomBtn {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    flex: none;
+    width: 70px;
+}
+
+.buttonspace2 button#randomBtn{
+    flex: auto;
+    font-size: 1.7rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 60px;
+    padding: 0;
+}
+
+.buttonspace2 p{
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin: 5px 0;
+}
+
+.menugame{
+    margin-top: 50px;
+    margin-left: 800px;
+    margin-right: 50px;
+    width: 100%;
+    height: 675px;
+    background-color: rgba(204, 204, 204, 0.5);
+    border-radius: 50px;
+    background-size: 150%;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+
+.menugame ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menugame h1{
+    margin-top: 20px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.menugame h2{
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.infogame{
+    margin-left: 18%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.tri-custom{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.tri-custom div.btn-group, .tri-custom div.input-group{
+    margin: 20px 15px;
+}
+
+.tri-custom div.input-group{
+    height: 2rem;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.dropdown{
+    margin-right: 10%;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    height: 40px;
+    width: 200px;
+}
+  
+.topnav .search-container button {
+    float: right;
+    height: 40px;
+    width: 40px;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+  
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+    margin: 0;
+    padding: 8px;
+}
+
+.alert{
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+.rules-page-container {
+    margin-left: 15%;
+    margin-right:15%;
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+
+.background-rules {
+    background-image: url("../img/fond4.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding-top:5%;
+    padding-bottom:10%;
+}
+
+article {
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 5%;
+}
+article h1 {
+    text-align:center;
+    font-weight: bold;
+    font-size:3.5rem;
+    margin-right: 35%;
+    margin-left:35%;
+    padding-bottom:20px;
+    background-color: rgb(213, 213, 213);
+    border-bottom-right-radius: 300px; 
+    border-bottom-left-radius: 300px;
+}
+
+article h2 {
+    font-size: 2.5rem;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+article p {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+}
+
+.exempleRules {
+    margin-top: 30px;
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.exempleRules i {
+    padding-top: 3%;
+}
+
+
+.background-edit {
+    background-image: url("../img/fond4.png");
+    background-repeat: repeat-y;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.create-your-game-page-container-title {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30%;
+    margin-right:30%;
+    margin-bottom: 50px;
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+
+
+
+.create-your-game-page-container {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-left: 15%;
+    margin-right:15%;
+    margin-bottom: 50px;
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+
+h4{
+    font-size: 3rem;
+}
+
+.create-your-game-page-container2 {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-left: 15%;
+    margin-right:15%;
+    margin-bottom: 50px;
+    background-color: rgba(235, 232, 232, 0.5);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+    transition-duration: 0.2s;
+}
+
+.create-your-game-page-container2:hover {
+    background-color: rgb(235, 232, 232);
+}
+
+.advise {
+    text-align: center;
+
+}
+
+.backgame{
+    padding: 50px 100px;
+    background-image: url(../img/fond4.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+@keyframes rebond {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-10px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    55%  { transform: scale(1,1)      translateY(-2px); }
+    65%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+.has-rebond-animation-once {
+    animation: rebond 1.3s;
+}
+
+.erreur {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 5%;
+    background-color: rgb(235, 232, 232);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+
+.erreur404 h1 {
+    line-height: 10rem;
+    font-size: 10rem;
+    text-align: center;
+    animation: infinite;
+    animation-name: rebond;
+    animation-duration: 3s;
+}
+.erreur p {
+    text-align: center;
+    font-size:2rem;
+}
+
+.footer {
+    color: rgb(219, 219, 219);
+    box-shadow: 1px -1px 17px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer a, .footer i{
+    color: rgb(219, 219, 219);
+}
+
+.footerbox {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+
+.createurs {
+    margin-left: 70px;
+    margin-top: 2%;
+    display: block;
+    height: auto;
+}
+
+.img_createurs {
+    background-color: none;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 2%;
+}
+
+.createurs > h1 {
+    padding-top: 1%;
+    text-align: left;
+    line-height: 0.8em;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.createurs > p {
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 1.5rem;
+}
+
+.createurs_containers {
+    width: 40%;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    background-color: rgba(235, 232, 232, 0.5);
+    border-radius: 50px; 
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+    transition-duration: 0.2s;
+}
+.zone {
+    justify-content: space-around;
+    display: flex;
+}
+.createurs_containers:hover{
+    background-color: rgb(235, 232, 232);
+}
+
+
+
+/*bouton + pop fenetre pop up*/
+a.carteModal { 
+    text-align: center; 
+    text-decoration: none; 
+}
+
+/* Décrire l'animation */
+@keyframes slideDownFadeIN {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+
+/* Foncer l'arrière-plan de la fenêtre modale */
+.modal {
+  display: none; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Afficher la fenêtre modale lorsqu'elle est ciblée par un lien supprimer */
+.modal:target {
+  display: table;
+}
+
+/* la fenêtre modale  */
+.modal-windows {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Le contenu de la modale */
+.modal-windows .modal-carte {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b1b1b1;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: center;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: slideDownFadeIN;
+  animation-duration: 0.5s;
+  border-radius: 20px;
+}
+
+.modal-windows:hover .modal-carte:hover {  
+    background-color: #c9c9c9;
+    transition-duration: 2s;
+}
+/* Bouton servant à fermer la fenêtre modale */
+.modal-carte .closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+}
+
+.modal-carte .closebtn:hover,
+.modal-carte .closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.map{
+    justify-content: center;
+    padding-top: 2.5%;
+}
+
+.createurs a:hover{
+    color: black;
+    cursor: text;
+}
